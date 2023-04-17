@@ -1,0 +1,121 @@
+
+.body {
+    background-color: var(--orange);
+   
+}
+.body__align{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+#header {
+    display: flex;
+    align-items: flex-end;
+    padding: 20px 0 0 40px;
+}
+
+#header img{
+    margin-right: 20px;
+}
+
+.title {
+    font-size: 45px;
+    font-weight: 700;
+    color: var(--white);
+    margin-top: 25px;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: var(--white);
+    width: 50%;
+    height: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 20px 10px;
+    margin-top: 20px;
+    
+}
+
+.card__title {
+
+    color: var(--black);
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+
+  }
+  
+  .coluna {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33.33%;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+  
+  .campo {
+    margin: 10px 0;
+    width: 100%;
+    font-size: 18px;
+    color: var(--gray);
+    justify-content: space-between;
+  }
+  
+  label {
+    display: flex;
+    margin-bottom: 5px;
+    justify-content: flex-start;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  
+  input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    background-color: var(--light-white);
+    border: hidden;
+    border-radius: 5px;
+  }
+  
+  .enviar {
+    background-color: var(--orange);
+    color: var(--white);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 24px;
+    font-weight: 700;
+  }
+  
+  .enviar:hover {
+    background-color: var(--orange);
+  }
+
+  .checkbox {
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  
+ .botao {
+    margin-top: 40px;
+ }
