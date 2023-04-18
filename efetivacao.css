@@ -1,0 +1,44 @@
+@import url(./base.css);
+
+
+.body__align {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.texto__principal {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: var(--white);
+    margin-left: 3rem;
+}
+
+.titulo {
+    font-size: 68px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.titulo__segundo{
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-color: var(--white);
+    width: 250px;
+    height: 200px;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 20px 10px;
+    margin-top: 20px;
+}

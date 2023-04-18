@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="base.css" />
+    <link rel="stylesheet" href="tela-inicial.css" />
+    <link rel="stylesheet" href="confirmacao-de-dados.css"/>
+
+    <title>Abertura de conta PJ</title>
+  </head>
+
+  <body class="body">
+    <div id="header">
+      <img src="./pictures/logo-itau.svg" alt="Logo Itaú" />
+      <img
+        src="./pictures/ItauEmpresasText.svg"
+        alt="Logo Itaú para empresas"
+      />
+    </div>
+    <div class="body__align">
+      <h2 class="title">Abertura de conta PJ</h2>
+
+      <div class="card">
+        <h2 class="card__title">Seus dados estão corretos?</h2>
+       
+          <form class="formulario">
+            
+            <div class="coluna">
+              <div class="campo">
+                <label for="cnpj">CNPJ</label>
+                <input type="text" id="cnpj" class="input-padrao" required>
+              </div>
+
+              <div class="campo">
+                <label for="cnpj-representante">CNPJ Representante Legal</label>
+                <input type="text" id="cnpj-representante" class="input-padrao" required>
+              </div>
+
+              <div class="campo">
+                <label for="quantidade-funcionarios">Quantidade de Funcionários</label>
+                <input type="text" id="quantidade-funcionarios" class="input-padrao" required>
+              </div>
+            </div>
+
+            <div class="coluna">
+              <div class="campo">
+                <label for="razao-social">Razão Social</label>
+                <input type="text" id="razao-social" class="input-padrao" required>
+              </div>
+
+              <div class="campo">
+                <label for="nome-representante">Nome do Representante Legal</label>
+                <input type="text" id="nome-representante" class="input-padrao" required>
+              </div>
+
+              <div class="campo">
+                <label for="faturamento-anual">Faturamento Anual</label>
+                <input type="text" id="faturamento-anual" class="input-padrao" required>
+              </div>
+             
+            </div>
+
+            <div class="coluna">
+              <div class="campo">
+                <label for="segundo-nome">Como deseja ser chamado?</label>
+                <input type="text" id="segundo-nome" class="input-padrao" required>
+              </div>
+
+              
+            </div>
+
+            <div class="botao">        
+                <div class="botao__formulario">
+                    <a href="./tela-inicial.html">
+                        <input type="submit" value="Voltar" class="enviar">
+                    </a>
+                </div>
+                <div class="botao__formulario">
+                    <a href="./efetivacao.html">
+                        <input type="submit" value="Continuar" class="enviar">
+                    </a>
+                </div>
+            </div>
+          </form>
+
+      </div>
+    </div>
+  </body>
+</html>

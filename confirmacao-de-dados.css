@@ -1,0 +1,17 @@
+@import url(./base.css);
+
+.botao {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin: 20px;
+  }
+
+
+  .botao__formulario {
+    margin-top: 40px;
+ }
+
+ input{
+    background-color: var(--light-gray);
+ }
