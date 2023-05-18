@@ -31,14 +31,24 @@
 
 .card {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: flex-start;
     background-color: var(--white);
-    width: 250px;
-    height: 200px;
-    margin-top: 10px;
+    width: 350px;
+    height: 250px;
     border-radius: 5px;
     padding: 20px 10px;
     margin-top: 20px;
+}
+
+.titulo__conta{
+    color: black;
+    font-weight: 800;
+}
+
+.card__p{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    margin-top: 55px
 }
