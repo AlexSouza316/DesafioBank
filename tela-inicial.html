@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="base.css" />
     <link rel="stylesheet" href="tela-inicial.css" />
+    <script src="./js/abertura.js"></script>
 
     <title>Itaú Empressas</title>
   </head>
@@ -30,34 +31,34 @@
             <div class="coluna">
               <div class="campo">
                 <label for="cnpj">CNPJ</label>
-                <input type="text" id="cnpj" class="input-padrao" required>
+                <input type="text" id="cnpj" name="cnpj" required oninput="formatarCNPJ(this)" maxlength="18">
               </div>
 
               <div class="campo">
-                <label for="cnpj-representante">CNPJ Representante Legal</label>
-                <input type="text" id="cnpj-representante" class="input-padrao" required>
+                <label for="cnpj-representante">CPF Representante Legal</label>
+                <input type="text" id="cpf" name="cpf" required oninput="formatarCPF(this)" maxlength="14">
               </div>
 
               <div class="campo">
                 <label for="quantidade-funcionarios">Quantidade de Funcionários</label>
-                <input type="text" id="quantidade-funcionarios" class="input-padrao" required>
+                <input type="text" id="quantidade-funcionarios" oninput="formatarQuantidadeFuncionarios(this)" class="input-padrao" required>
               </div>
             </div>
 
             <div class="coluna">
               <div class="campo">
                 <label for="razao-social">Razão Social</label>
-                <input type="text" id="razao-social" class="input-padrao" required>
+                <input type="text" id="razao-social" class="input-padrao" required  maxlength="30">
               </div>
 
               <div class="campo">
                 <label for="nome-representante">Nome do Representante Legal</label>
-                <input type="text" id="nome-representante" class="input-padrao" required>
+                <input type="text" id="nome-representante" class="input-padrao" required  maxlength="20">
               </div>
 
               <div class="campo">
                 <label for="faturamento-anual">Faturamento Anual</label>
-                <input type="text" id="faturamento-anual" class="input-padrao" required>
+                <input type="text" id="faturamento-anual" oninput="formatarFaturamentoAnual(this)" class="input-padrao" required>
               </div>
              
             </div>
@@ -65,19 +66,22 @@
             <div class="coluna">
               <div class="campo">
                 <label for="segundo-nome">Como deseja ser chamado?</label>
-                <input type="text" id="segundo-nome" class="input-padrao" required>
+                <input type="text" id="segundo-nome" class="input-padrao" required maxlength="10">
                 <label class="checkbox"><input type="checkbox" checked> mesmo nome do representante legal</label>
               </div>
 
-              
             </div>
-            <div class="botao">
+            
+          </form>
+          
+          <form onsubmit="return validarCampos()">
+          <div class="botao">
               <a href="./confirmação-de-dados.html">
                 <input type="submit" value="Abrir conta PJ" class="enviar">
               </a>
-              </a>
-            </div>
-          </form>
+            </a>
+          </div>
+        </form>
 
       </div>
     </div>
