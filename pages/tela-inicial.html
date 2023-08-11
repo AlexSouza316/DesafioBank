@@ -4,19 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="base.css" />
-    <link rel="stylesheet" href="tela-inicial.css" />
-    <script src="./js/abertura.js"></script>
+    <link rel="stylesheet" href="/styles/reset.css" />
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="stylesheet" href="/styles/tela-inicial.css" />
+    <script src="/js/abertura.js"></script>
 
     <title>Itaú Empressas</title>
   </head>
 
   <body class="body">
     <div id="header">
-      <img src="./pictures/logo-itau.svg" alt="Logo Itaú" />
+      <img src="/pictures/logo-itau.svg" alt="Logo Itaú" />
       <img
-        src="./pictures/ItauEmpresasText.svg"
+        src="/pictures/ItauEmpresasText.svg"
         alt="Logo Itaú para empresas"
       />
     </div>
@@ -76,8 +76,8 @@
           
           <form onsubmit="return validarCampos()">
           <div class="botao">
-              <a href="./confirmação-de-dados.html">
-                <input type="submit" value="Abrir conta PJ" class="enviar">
+              <a href="./confirmacao-de-dados.html">
+                <input type="submit" value="Abrir conta PJ" class="enviar" id="redirect" oninput="redirect(this)">
               </a>
             </a>
           </div>

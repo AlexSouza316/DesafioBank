@@ -94,10 +94,11 @@ function validarCampos() {
     return false;
   }
 
+  
+
   // CPF
   if (cpf.length === 14 || /^(\d)\1{10}$/.test(cpf)) {
-    if (cpf.length === 14 || /^(\d)\1{10}$/.test(cpf)) {
-    }
+    localStorage.setItem("cpf",  cpf)
     return false;
   } else {
     // implementar trativa de mensagem de error
@@ -106,6 +107,7 @@ function validarCampos() {
 
   //Razão Social
   if (razaoSocial.length <= 30) {
+    localStorage.setItem("razaoSocial",  razaoSocial)
     return false;
   } else {
     alert("Tamanho máximo de 30 caracteres!");
@@ -113,27 +115,46 @@ function validarCampos() {
   }
   //CNPJ
   if (cnpj.length === 18 || /^(\d)\1{13}$/.test(cnpj)) {
+    localStorage.setItem("cnpj",  cnpj)
     return false;
   } else {
     // implementar trativa de mensagem de error
     alert("CNPJ inválido!");
+
+    //Nome do Representante
+    if (nomeRepresentante.length <= 20) {
+      localStorage.setItem("nomeRepresentante",  nomeRepresentante)
+      return false;
+    } else {
+      // implementar trativa de mensagem de error
+      alert("Tamanho máximo de 20 caracteres.");
+    }
+
+    //Como deseja ser chamado
+    if (segundoNome.length <= 10) {
+      localStorage.setItem("segundoNome",  segundoNome)
+      return false;
+      
+    } else {
+      // implementar trativa de mensagem de error
+      alert("Tamanho máximo de 10 caracteres.");
+    }
   }
 
-  //Nome do Representante
-  if (nomeRepresentante.length <= 20) {
-    return false;
-  } else {
-    // implementar trativa de mensagem de error
-    alert("Tamanho máximo de 20 caracteres.");
-  }
+  document.getElementById("redirect").addEventListener("click", function() {
+    // Redirecionar para a página 2
+    window.location.href = "confirmacao-de-dados.html";
+    return false
+  });
+  return true
 
-  //Como deseja ser chamado
-  if (nomeRepresentante.length <= 10) {
-    return false;
-  } else {
-    // implementar trativa de mensagem de error
-    alert("Tamanho máximo de 10 caracteres.");
-  }
+}
 
-  return true;
+
+// Nao funciona
+function redirect() {
+  document.getElementById("redirect").addEventListener("click", function() {
+    // Redirecionar para a página 2
+    window.location.href = "confirmacao-de-dados.html";
+  });
 }

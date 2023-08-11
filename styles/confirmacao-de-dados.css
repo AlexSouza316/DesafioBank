@@ -1,4 +1,4 @@
-@import url(./base.css);
+@import url(/styles/styles.css);
 
 .botao {
     display: flex;
